@@ -9,6 +9,7 @@ import scipy.sparse
 
 app = Flask(__name__)
 
+
 # Load the model and the vectorizer
 model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
@@ -24,9 +25,9 @@ def postprocess(disease):
     return disease.title()
 
 greetings = [
-    (r"hi|hello|hey", ["Hello, I am a health care chatbot. How can I help you?", "Hey, I am a health care chatbot. How can I help you?"]),
+    (r"hi|hello|hey", ["Hello, I am a health hub chatbot. How can I help you?", "Hey, I am a health hub chatbot. How can I help you?"]),
     (r"how are you|how do you do", ["I am fine, thank you.", "I am doing well, thank you.", "I am good, thank you."]),
-    (r"what is your name|who are you", ["I am a health care chatbot.", "My name is HealthBot.", "I am HealthBot, a health care chatbot."]),
+    (r"what is your name|who are you", ["I am a health hub chatbot.", "My name is HealthBot.", "I am HealthBot, a health care chatbot."]),
     (r"you are amazing|you are awesome|you are great", ["Thank you for your kind words.", "You are too kind.", "You made my day."]),
     (r"thank you|thanks|thankyou", ["You are welcome.", "It's my pleasure.", "No problem."]),
     (r"bye|goodbye|see you", ["Bye for now.", "Goodbye, take care.", "See you soon."])
@@ -70,5 +71,6 @@ def chatbot():
         bot.clear()
         return render_template('chatbot.html')
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
