@@ -5,17 +5,17 @@ Welcome to the Health Hub ! This Python code helps you check and predict possibl
 
 # Functionalities of the bot:
 
-Predict diseases from user-given symptoms
-Suggest home remedies and cure
-Provide with treatment information
+1)Predict diseases from user-given symptoms
+2)Suggest home remedies and cure
+3)Provide with treatment information
 
 # Installation
 To run this app, you need to have Python 3 and the following libraries installed:
 
-Flask
-pickle
-sklearn
-nltk
+1)Flask
+2)pickle
+3)sklearn
+4)nltk
 You can install them using pip:
 
 pip install Flask
