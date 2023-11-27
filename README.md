@@ -45,9 +45,9 @@ To chat with the health care chatbot, click on the "Chat with me" button on the 
 You can end the chat by typing "bye", "goodbye" or "see you" in the input box.
 
 # Example
-Here is an example of a chat session with the health care chatbot:
+Here is an example of a chat session with the health hub chatbot:
 
-![image](https://github.com/Sanskaar92/CLOUD_PERFORMANCE_TUNING/assets/138485298/bb030b48-1726-4a47-82c0-247f3075d30e)
+![image](https://github.com/Sanskaar92/CLOUD_PERFORMANCE_TUNING/assets/138485298/55cb4acc-5426-4c55-84ed-c0cc0846a439)
 
 
 
