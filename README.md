@@ -15,15 +15,23 @@ Welcome to the Health Hub ! This Python code helps you check and predict possibl
 To run this app, you need to have Python 3 and the following libraries installed:
 
 1)Flask
+
 2)pickle
+
 3)sklearn
+
 4)nltk
+
 You can install them using pip:
 
 pip install Flask
+
 pip install pickle
+
 pip install sklearn
+
 pip install nltk
+
 You also need to download the model.pkl and vectorizer.pkl files from this repository and place them in the same folder as the app.py file.
 
 # Usage
