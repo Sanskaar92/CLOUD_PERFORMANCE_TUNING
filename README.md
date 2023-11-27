@@ -3,73 +3,42 @@
 
 Welcome to the Health Hub ! This Python code helps you check and predict possible medical conditions based on your choice. It helps to predict the disease and also give valid response and doctors to consult for that particular disease.
 
-## Table of Contents
+# Functionalities of the bot:
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Features](#Features)
-- [Modules used](#modulesused)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
+Predict diseases from user-given symptoms
+Suggest home remedies and cure
+Provide with treatment information
 
-## Introduction
+# Installation
+To run this app, you need to have Python 3 and the following libraries installed:
 
-The healthcare chatbot system is designed to offer around-the-clock online healthcare support for hospitals. It has the capability to provide comprehensive answers to both specific and general medical inquiries. Additionally, the chatbot can assist in lead generation and automatically send lead information to the sales department. Through a sequential series of questions, it guides patients to pinpoint their exact healthcare needs and preferences.
+Flask
+pickle
+sklearn
+nltk
+You can install them using pip:
 
+pip install Flask
+pip install pickle
+pip install sklearn
+pip install nltk
+You also need to download the model.pkl and vectorizer.pkl files from this repository and place them in the same folder as the app.py file.
 
-## Prerequisites
+# Usage
+To run the app, navigate to the folder where the app.py file is located and run the following command:
 
-Before using this system, you'll need:
+python app.py
+This will start a local server on your machine. You can then open your browser and go to http://localhost:5000/ to see the home page of the app.
 
-- A Python environment with the necessary libraries installed.
-- Training and testing data in CSV format (provided as 'Training.csv' and 'Testing.csv' here).
-- An Azure account if you wish to deploy this code as a web service.
+To chat with the health care chatbot, click on the "Chat with me" button on the home page. This will take you to the chatbot page where you can type your symptoms or greetings in the input box and press enter. The chatbot will respond with a diagnosis or a greeting based on your input.
 
-## Features
+You can end the chat by typing "bye", "goodbye" or "see you" in the input box.
 
-- Register Screen.
-- Sign-in Screen.
-- Generates database for user login system.
-- Offers you a GUI Based Chatbot for patients for diagnosing. 
-- Reccomends an appropriate doctor to you for the following symptom.
+# Example
+Here is an example of a chat session with the health care chatbot:
 
-## Modules Used
-
-- tkinter
-- os
-- webbrowser
-- numpy
-- pandas
-- matplotlib
+![image](https://github.com/Sanskaar92/CLOUD_PERFORMANCE_TUNING/assets/138485298/bb030b48-1726-4a47-82c0-247f3075d30e)
 
 
-## Usage
-
-1. Load Data: Start by providing training and testing data in CSV format. The code uses this data for analysis.
-
-2. Train Models: The code trains a Decision Tree classifier and a Support Vector Machine (SVM) to make predictions based on the symptoms.
-
-3. Feature Importance: It calculates feature importances to understand which symptoms contribute the most to predictions.
-
-4. Symptom Analysis: The code offers an interactive session where you can input your symptoms and the number of days you've experienced them. It predicts possible diseases and provides descriptions and precautions.
-
-
-## Deployment
-
-You can deploy this code on Azure as a web application or service for wider accessibility. 
-
-Ensure that you have an Azure account. 
-Decide on the deployment approach. You can deploy the code as a web app or create an Azure Function (for serverless deployment) depending on your specific requirements.
-You'll need a server to host your code. You can create a virtual machine or use Azure's App Service for web app hosting.
-Ensure that the required libraries, including Python and the necessary packages, are installed on the virtual machine or app service.
-You will need to upload and deploy your code to the virtual machine or web app
-
-## Contributing
-
-Feel free to contribute to this project! If you have ideas for improvements or new features, submit a pull request. We welcome your contributions.
-
-
-This README provides a simple and clear introduction to the code, instructions on how to get started, use the system, deploy it on Azure, contribute to the project, and mentions the licensing.
 
 
