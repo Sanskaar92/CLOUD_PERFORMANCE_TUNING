@@ -6,7 +6,9 @@ Welcome to the Health Hub ! This Python code helps you check and predict possibl
 # Functionalities of the bot:
 
 1)Predict diseases from user-given symptoms
+
 2)Suggest home remedies and cure
+
 3)Provide with treatment information
 
 # Installation
